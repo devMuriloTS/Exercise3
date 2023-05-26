@@ -43,8 +43,8 @@ public class AlimentosSA extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         txtPesquisar = new javax.swing.JTextField();
-        btPesquisar = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
+        btPesquisa = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         btLimpar = new javax.swing.JButton();
@@ -109,7 +109,7 @@ public class AlimentosSA extends javax.swing.JFrame {
         lbResultado.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         lbResultado.setForeground(new java.awt.Color(255, 255, 0));
         lbResultado.setText("           ???");
-        jPanel3.add(lbResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 150, -1));
+        jPanel3.add(lbResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 230, -1));
 
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 0));
@@ -120,31 +120,31 @@ public class AlimentosSA extends javax.swing.JFrame {
         jLabel9.setForeground(new java.awt.Color(255, 255, 0));
         jLabel9.setText("Nome produto");
         jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, -1, -1));
-        jPanel3.add(txtPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 200, 20));
-
-        btPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/211885_search_icon.png"))); // NOI18N
-        btPesquisar.setText("Pesquisar");
-        btPesquisar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btPesquisarActionPerformed(evt);
-            }
-        });
-        jPanel3.add(btPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 110, -1));
+        jPanel3.add(txtPesquisar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 56, 320, -1));
 
         jLabel12.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 0));
         jLabel12.setText("Resultado:");
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, 280, 140));
+        btPesquisa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/211885_search_icon.png"))); // NOI18N
+        btPesquisa.setText("Pesquisar");
+        btPesquisa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btPesquisaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btPesquisa, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, 370, 140));
 
         jPanel4.setBackground(new java.awt.Color(70, 85, 211));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 0));
         jLabel7.setText("Listagem de produtos");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
+        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, -1, -1));
 
         btLimpar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/352303_delete_icon.png"))); // NOI18N
         btLimpar.setText("Limpar");
@@ -180,10 +180,10 @@ public class AlimentosSA extends javax.swing.JFrame {
         jLabel5.setText("Novo nome");
         jPanel5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 0));
         jLabel10.setText("Editar ou excluir");
-        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, -1));
+        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, -1));
 
         txtNovoNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -222,7 +222,7 @@ public class AlimentosSA extends javax.swing.JFrame {
         });
         jPanel5.add(btExcluir, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, 130, 40));
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, 310, 230));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, 400, 230));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/3671795_food_location_icon.png"))); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 20, -1, -1));
@@ -234,7 +234,7 @@ public class AlimentosSA extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 872, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,7 +243,7 @@ public class AlimentosSA extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    public static String listaProdutos[] = new String[10];
+    public static String listaProdutos[] = {"","","","","","","","","",""};
     static int i = 0;
     private void btLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLimparActionPerformed
         int c;
@@ -264,34 +264,27 @@ public class AlimentosSA extends javax.swing.JFrame {
     }//GEN-LAST:event_btSalvarActionPerformed
 
     private void btListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btListarActionPerformed
-        int i;
+        int zof, cod;
         String r = "";
-        for (i=0; i<listaProdutos.length; i++){
-            r+= "Codigo: "+(i+1)+" - "+listaProdutos[i]+"\n";
+        for (zof=0; zof<listaProdutos.length; zof++){
+            r+= "Codigo: "+(zof+1)+" - "+listaProdutos[zof]+"\n";
         }
         jtxtLista.setText(r);
     }//GEN-LAST:event_btListarActionPerformed
-
-    private void btPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisarActionPerformed
-        String pesquisa;
-        int c;
-        pesquisa = txtPesquisar.getText();
-        for (c=0; c<10; c++){
-            if(pesquisa == listaProdutos[c]){
-                lbResultado.setText("Produto encontrado!");
-            }else{
-                lbResultado.setText("Produto não encontrado!");
-            }
-        }
-        //tem coisa errada nisso aq ^^
-    }//GEN-LAST:event_btPesquisarActionPerformed
 
     private void txtCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodigoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCodigoActionPerformed
 
     private void btExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btExcluirActionPerformed
-        // TODO add your handling code here:
+        int cod;
+        String itemEx;
+        cod = Integer.parseInt(txtCodigo.getText());
+        itemEx = listaProdutos[cod-1];
+        listaProdutos[cod-1] = "";
+        JOptionPane.showMessageDialog(null, itemEx+" foi excluído com sucesso!");
+        
+        
     }//GEN-LAST:event_btExcluirActionPerformed
 
     private void txtNovoNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNovoNomeActionPerformed
@@ -299,8 +292,44 @@ public class AlimentosSA extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNovoNomeActionPerformed
 
     private void btEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btEditarActionPerformed
-        // TODO add your handling code here:
+        int cod;
+        String item, novoNome;
+        cod = Integer.parseInt(txtCodigo.getText());
+        item = listaProdutos[cod-1];
+        novoNome = txtNovoNome.getText();
+        listaProdutos[cod-1] = novoNome;
+        JOptionPane.showMessageDialog(null, item+" foi renomeado com sucesso para "+novoNome);
+        
     }//GEN-LAST:event_btEditarActionPerformed
+
+    private void btPesquisaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPesquisaActionPerformed
+        int z;
+        String produto;
+        produto = txtPesquisar.getText();
+        if (listaProdutos[0] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[1] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[2] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[3] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[4] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[5] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[6] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[7] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[8] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else if (listaProdutos[9] == null ? produto == null : listaProdutos[0].equals(produto)){
+            lbResultado.setText("Produto consta na lista.");
+        }else {
+            lbResultado.setText("Produto não consta na lista.");
+        }
+    }//GEN-LAST:event_btPesquisaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -342,7 +371,7 @@ public class AlimentosSA extends javax.swing.JFrame {
     private javax.swing.JButton btExcluir;
     private javax.swing.JButton btLimpar;
     private javax.swing.JButton btListar;
-    private javax.swing.JButton btPesquisar;
+    private javax.swing.JButton btPesquisa;
     private javax.swing.JButton btSalvar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
